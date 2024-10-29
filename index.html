@@ -3,10 +3,68 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Yan's Peronal Page</title>
+    <title> Yan's Peronal Website</title>
+    <style>
+      body{
+        front-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image:url('images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #333;  /*文字颜色*/
+      }
+
+      .container{
+        background: rgba(255,255,255,0.8);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      .profile-photo{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #333;
+        margin-top: 20px;
+      }
+
+      .links{
+        margin: 20px 0;
+      }
+
+      .links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        fonr-weight: bold;
+      }
+
+      .links a:hover{
+        color: #007acc;
+      } 
+    </style>
   </head>
   <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is my personal website hosted on Github Pages.</p>
+    <div class="container">
+      <img src="images/photo.jpg" alt="Yanhe" class="profile-photo">
+    <h1>Hello, I'm [Yanhe Ren]</h1>
+    <p>Welcome to my personal website! I'm a Data Analyst in [Qu lab], UC Irvine.</p>
+
+      <div class="links">
+        <a href="https://github.com/ryhmtxx" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/yanhe-ren-946031251/" target="_blank">LinkedIn</a>
+      </div>
+
+      <p> Thank you for visiting!</p>
+    </div>
   </body>
 </html>
