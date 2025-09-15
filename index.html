@@ -3,78 +3,94 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Yan's Peronal Website</title>
+    <title>Yan's Personal Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
       body{
-        front-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 100vh;
         margin: 0;
-        background-image:url('image/background.jpg');
+        background-image: url('image/background.jpg'); /* 不改图片 */
         background-size: cover;
         background-position: center;
-        color: #333;  /*文字颜色*/
+        color: #333;
       }
-
       .container{
-        background: rgba(255,255,255,0.8);
-        padding: 20px;
-        border-radius: 10px;
+        background: rgba(255,255,255,0.85);
+        padding: 22px;
+        border-radius: 12px;
         text-align: center;
-        width: 80%;
-        max-width: 600px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        width: 86%;
+        max-width: 680px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       }
-
       .profile-photo{
-        width: 150px;
-        height: 150px;
+        width: 150px; height: 150px;
         border-radius: 50%;
         object-fit: cover;
         border: 2px solid #333;
-        margin-top: 20px;
+        margin-top: 8px;
       }
-
-      .links{
-        margin: 20px 0;
+      .banner{
+        margin: 12px 0 6px;
+        font-size: 14px;
+        background: #eef6ff;
+        color: #0b6bcb;
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
       }
-
+      .links{ margin: 16px 0 0; }
       .links a {
         margin: 0 10px;
         text-decoration: none;
         color: #333;
-        fonr-weight: bold;
+        font-weight: bold;
       }
-
-      .links a:hover{
-        color: #007acc;
-      } 
+      .links a:hover{ color: #007acc; }
+      p{ text-align: left; line-height: 1.55; margin: 10px 0; }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="image/photo.jpg" alt="Yanhe" class="profile-photo">
-    <h1>Welcome to Yanhe's Personal Website!</h1>
-     <p style="text-align: left;">
-        I am a Data Analyst in the Qu Lab at the <a href="https://www.stat.uci.edu/" target="_blank">Department of Statistics</a>, <a href="https://www.uci.edu/" target="?blank">University of California, Irvine</a>, working under the mentorship of Professor <a href="https://www.stat.uci.edu/faculty/annie-qu/" target="_blank">Annie Qu</a>. My research focuses on data analytics for behavioral and health studies. I developed an <a href="https://github.com/ryhmtxx/Qulab_EMA" target="_blank">Ecological Momentary Assessment (EMA) data collection app</a> for real-time data gathering, and I am involved in projects on Active Learning and Sentiment Analysis to enhance insights from complex datasets.
-    </p>
-    <p style="text-align: left;">
-        I completed my Master's degree in Electrical and Computer Engineering (ECE) at <a href="https://engineering.uci.edu/" target="_blank">The Henry Samueli School of Engineering</a>, UCI in 2022. Prior to that, I earned my Bachelor's degree in Automation in 2022, at the <a href="https://www.ecust.edu.cn/en/" target="_blank">East China University of Science and Technology (ECUST)</a>，in the <a href="https://cise.ecust.edu.cn/" target="_blank">School of Information Science and Engineering</a>, where I was advised by Professor <a href="https://wanglihe.weebly.com/" target="_blank">Wangli He</a>.
-    </p>
-    <p style="text-align: left;">
-        My current role allows me to explore and apply advanced statistical methods, with the goal of generating insights that can drive meaningful outcomes in various fields. I am always eager to connect and collaborate on projects that challenge conventional analytics and foster innovation.
-    </p>
+      <img src="image/photo.jpg" alt="Yanhe" class="profile-photo"> <!-- 不改图片 -->
+      <h1>Yanhe Ren</h1>
+      <div class="banner">Open to Summer 2026 ML/DS Internships · F-1 (CPT May 2026) · Phoenix, AZ</div>
+
+      <p>
+        I am a Statistics PhD student (ASU) and previously a Data Analyst in the Qu Lab at the
+        <a href="https://www.stat.uci.edu/" target="_blank">Department of Statistics</a>,
+        <a href="https://www.uci.edu/" target="_blank">University of California, Irvine</a>, mentored by
+        Professor <a href="https://www.stat.uci.edu/faculty/annie-qu/" target="_blank">Annie Qu</a>.
+        I build applied ML/DS systems with real users and data.
+      </p>
+
+      <p>
+        I developed an <a href="https://github.com/ryhmtxx/Qulab_EMA" target="_blank">EMA data collection app</a>
+        for a longitudinal study—now tracking <b>110k+ events</b> (and growing)—and integrated Oura Ring streams,
+        data quality checks, and cohort dashboards. I also curated a 2024 U.S. election corpus (X/Twitter) and
+        assembled a <b>1.7M-abstract</b> arXiv dataset for topic modeling.
+      </p>
+
+      <p>
+        I completed my M.S. in Electrical and Computer Engineering at
+        <a href="https://engineering.uci.edu/" target="_blank">The Henry Samueli School of Engineering</a>, UCI.
+        Before that, I earned my B.Eng. in Automation at the
+        <a href="https://www.ecust.edu.cn/en/" target="_blank">East China University of Science and Technology (ECUST)</a>
+        in the <a href="https://cise.ecust.edu.cn/" target="_blank">School of Information Science and Engineering</a>,
+        advised by Professor <a href="https://wanglihe.weebly.com/" target="_blank">Wangli He</a>.
+      </p>
 
       <div class="links">
         <a href="https://github.com/ryhmtxx" target="_blank"><i class="fab fa-github"></i>Github</a>
         <a href="https://www.linkedin.com/in/yanhe-ren-946031251/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-        <a href="mailto:yanher@uci.edu"><i class="fas fa-envelop"></i>Email</a>
+        <a href="mailto:yanher@uci.edu"><i class="fas fa-envelope"></i>Email</a>
       </div>
 
-      <p> Thank you for visiting!</p>
+      <p style="margin-top:14px; text-align:center;">Thanks for visiting!</p>
     </div>
   </body>
 </html>
